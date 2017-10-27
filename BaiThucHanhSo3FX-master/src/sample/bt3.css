@@ -1,0 +1,60 @@
+.root {
+   header-base-color: #f4ff81;
+}
+
+#header {
+  -fx-background-color: header-base-color;
+  -fx-border-color:  #545454;
+  -fx-border-width: 1px;
+  -fx-border-style: solid;
+}
+
+#header:hover {
+  -fx-background-color: #9ACD32;
+}
+.record-sales {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.record-sales:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+.record-sales:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.record-sales .text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.Label{
+    -fx-text-fill: #d50000;
+    -fx-font: 14px Serif;
+    -fx-pref-width: 90px;
+}
+.text-field {
+    -fx-prompt-text-fill: gray;
+    -fx-pref-width: 200px;
+}
+
+.text-field .text {
+    -fx-effect: dropshadow( two-pass-box , blue , .5, 10 , 1 , 1);
+}
+
+.text-field:empty .text {
+    -fx-effect: null ;
+}
